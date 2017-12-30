@@ -1,4 +1,4 @@
-# Wstęp
+## Wstęp
 
 W ramach przygotowań do kursu Back-End Developer PWN należało wykonać prostą stronę WWW z wykorzystaniem języków HTML i CSS.
 
@@ -33,5 +33,3 @@ Składa się z 5 stron HTML (jednej głównej i czterech tematycznych). W oddzie
 ## Informacje dodatkowe
 
 Projekt został zrealizowany na dzień **5 listopada 2017r.**
-
-
