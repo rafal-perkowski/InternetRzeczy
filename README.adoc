@@ -29,3 +29,9 @@ Składa się z 5 stron HTML (jednej głównej i czterech tematycznych). W oddzie
 ## Narzędzia
 
 * [Notepad{plus}{plus}](https://notepad-plus-plus.org/news/notepad-7.5.1-released.html) - Notepad++ jest darmowym edytorem kodu źródłowego
+
+## Informacje dodatkowe
+
+Projekt został zrealizowany na dzień **5 listopada 2017r.**
+
+
