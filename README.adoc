@@ -15,7 +15,7 @@ W ramach przygotowań do kursu Back-End Developer PWN należało wykonać prost�
 
 ## Internet Rzeczy
 
-Projekt został poświęcony popularnej obecnie tematyce Internetu Rzeczy (ang. IoT = Internet of Things). +
+Projekt został poświęcony popularnej obecnie tematyce Internetu Rzeczy (_ang. IoT = Internet of Things_). +
 Składa się z 5 stron HTML (jednej głównej i czterech tematycznych). W oddzielnych katalogach umieszczono zdjęcia i arkusz stylów.
 
 * {githubdir}{projectdir}{blobmasterdir}/index.html[Internet Rzeczy] - Strona główna
