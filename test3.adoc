@@ -18,7 +18,7 @@ W ramach kolejnego etapu kursu Back-End Developer PWN należało wykonać aplika
 
 ### Opis aplikacji
 
-W ramach projektu została wykonana aplikacja w języku Python łącząca z bazą danych rankingu superkomputerów, której implementacja została zamieszczona w repozytorium "RankDatabase".
+W ramach projektu została wykonana aplikacja w języku Python łącząca z bazą danych rankingu superkomputerów, której implementacja została zamieszczona w repozytorium *_RankDatabase_*.
 
 Aplikacja powstała w zgodności z modelem/wzorcem MVC (Model View Controller).
 
@@ -52,11 +52,11 @@ W ramach modelu w pliku link:{srcdir}/top500rank.py[top500rank.py] zaimplementow
 
 ### Konfiguracja
 
-Program działa razem z bazą danych "top500rank" sprządzoną w ramach projektu "RankDatabase".
+Program działa razem z bazą danych "top500rank" sprządzoną w ramach projektu *_RankDatabase_*.
 
 NOTE: Dodatkowo należy skonfigurować własne hasło dostępu do bazy danych w pliku link:{srcdir}/logindata.py[logindata.py] dla konta "root" (w miejsce trzech gwiazdek) .
 
-Oczywiście zależnie od potrzeb można skonfigurować także pozostałe parametry logowania z listy "loginList":
+Oczywiście zależnie od potrzeb można skonfigurować także pozostałe parametry logowania z listy *_loginList_*:
 
 ====
 * host - adres komputera z serwerem bazy danych (_domyślna wartość: "localhost"_)
@@ -71,7 +71,7 @@ Po skonfigurowaniu i nawiązaniu połączenia z bazą danych pojawi się logo ap
 
 ### Logowanie
 
-Dostępne są dwa konta logowania demonstrujące oba typy interakcji z aplikacją:
+Dostępne są dwa wewnętrzne (w tabeli *_rankusers_* bazy danych) konta logowania demonstrujące oba typy interakcji z aplikacją:
 
 ====
 * Administrator - może wyświetlać, dodawać, modyfikować i usuwać rekordy w tabelach bazy danych +
