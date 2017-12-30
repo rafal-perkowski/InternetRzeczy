@@ -22,4 +22,4 @@ Składa się z 5 stron HTML (jednej głównej i czterech tematycznych). W oddzie
 
 ## Narzędzia
 
-* [Notepad{plus}{plus}](https://notepad-plus-plus.org/news/notepad-7.5.1-released.html) - Notepad++ is a free source code editor
+* [Notepad{plus}{plus}](https://notepad-plus-plus.org/news/notepad-7.5.1-released.html) - Notepad++ jest darmowym edytorem kodu źródłowego
