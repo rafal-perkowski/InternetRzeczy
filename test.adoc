@@ -1,9 +1,9 @@
 # Projekt nr 1: Prosta strona domowa
 
- [1]. Utwórz stronę o sobie lub interesującej Cię tematyce. Może to być również prosty blog – liczę na Twoją kreatywność!
- [2]. Możesz wykorzystać dowolne poznane techniki, ale nie korzystaj z gotowych templatek stron.
- [3]. Do realizacji tego projekt wygeneruj plik lub pliki HTML do budowy strony oraz plik CSS do zdefiniowania stylów na stronie.
- [4]. Podczas pracy nad stroną wykorzystaj Gita i umieść finalne pliki źródłowe swojej pierwszej strony w repozytorium GitHub.
+[1]. Utwórz stronę o sobie lub interesującej Cię tematyce. Może to być również prosty blog – liczę na Twoją kreatywność!
+[2]. Możesz wykorzystać dowolne poznane techniki, ale nie korzystaj z gotowych templatek stron.
+[3]. Do realizacji tego projekt wygeneruj plik lub pliki HTML do budowy strony oraz plik CSS do zdefiniowania stylów na stronie.
+[4]. Podczas pracy nad stroną wykorzystaj Gita i umieść finalne pliki źródłowe swojej pierwszej strony w repozytorium GitHub.
 
 ## Internet Rzeczy
 
