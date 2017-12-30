@@ -18,7 +18,7 @@ W ramach przygotowań do kursu Back-End Developer PWN należało wykonać prost�
 Projekt został poświęcony popularnej obecnie tematyce Internetu Rzeczy (_ang. IoT = Internet of Things_). +
 Składa się z 5 stron HTML (jednej głównej i czterech tematycznych). W oddzielnych katalogach umieszczono zdjęcia i arkusz stylów.
 
-* {githubdir}{projectdir}{blobmasterdir}/index.html[Internet Rzeczy] - Strona główna
+* index.html[Internet Rzeczy] - Strona główna
 * {githubdir}{projectdir}{blobmasterdir}/architektura.html[Architektura] - Opis architektury
 * {githubdir}{projectdir}{blobmasterdir}/urzadzenia.html[Urządzenia] - Charakterystyka urządzeń
 * {githubdir}{projectdir}{blobmasterdir}/chmura.html[Chmura] - Chmura obliczeniowa
