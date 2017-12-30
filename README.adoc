@@ -1,3 +1,7 @@
+:githubdir: https://github.com/rperkow
+:projectdir: /InternetRzeczy
+:blobmasterdir: /blob/master
+
 ## Wstęp
 
 W ramach przygotowań do kursu Back-End Developer PWN należało wykonać prostą stronę WWW z wykorzystaniem języków HTML i CSS.
@@ -14,21 +18,21 @@ W ramach przygotowań do kursu Back-End Developer PWN należało wykonać prost�
 Projekt został poświęcony popularnej obecnie tematyce Internetu Rzeczy (ang. IoT = Internet of Things). +
 Składa się z 5 stron HTML (jednej głównej i czterech tematycznych). W oddzielnych katalogach umieszczono zdjęcia i arkusz stylów.
 
-* [Internet Rzeczy](https://github.com/rperkow/InternetRzeczy/blob/master/index.html) - Strona główna
-* [Architektura](https://github.com/rperkow/InternetRzeczy/blob/master/architektura.html) - Opis architektury
-* [Urządzenia](https://github.com/rperkow/InternetRzeczy/blob/master/urzadzenia.html) - Charakterystyka urządzeń
-* [Chmura](https://github.com/rperkow/InternetRzeczy/blob/master/chmura.html) - Chmura obliczeniowa
-* [Zastosowania](https://github.com/rperkow/InternetRzeczy/blob/master/zastosowania.html) - Obszary zastosowań
+* {githubdir}{projectdir}{blobmasterdir}/index.html[Internet Rzeczy] - Strona główna
+* {githubdir}{projectdir}{blobmasterdir}/architektura.html[Architektura] - Opis architektury
+* {githubdir}{projectdir}{blobmasterdir}/urzadzenia.html[Urządzenia] - Charakterystyka urządzeń
+* {githubdir}{projectdir}{blobmasterdir}/chmura.html[Chmura] - Chmura obliczeniowa
+* {githubdir}{projectdir}{blobmasterdir}/zastosowania.html[Zastosowania] - Obszary zastosowań
 
 ## Materiały
 
 * Wprowadzenie do HTML i CSS, czyli ok. 100 slajdów z kursu PWN prezentujących podstawy technik front-endowych.
-* W3Schools HTML: https://www.w3schools.com/html/default.asp
-* W3Schools CSS: https://www.w3schools.com/css/default.asp
+* https://www.w3schools.com/html/default.asp[W3Schools HTML]
+* https://www.w3schools.com/css/default.asp[W3Schools CSS]
 
 ## Narzędzia
 
-* [Notepad{plus}{plus}](https://notepad-plus-plus.org/news/notepad-7.5.1-released.html) - Notepad++ jest darmowym edytorem kodu źródłowego
+* https://notepad-plus-plus.org/news/notepad-7.5.1-released.html[Notepad{plus}{plus} 7.5.1] - Notepad++ jest darmowym edytorem kodu źródłowego
 
 ## Informacje dodatkowe
 
