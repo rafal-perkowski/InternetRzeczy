@@ -1,88 +1,84 @@
-# Project Title
+:githubdir: https://github.com/rperkow
+:projectdir: /RankDatabase
+:blobmasterdir: /blob/master
+:sqldir: sql
 
-One Paragraph of project description goes here
+## Wstęp
 
-## Getting Started
+W ramach pierwszego etapu kursu Back-End Developer PWN należało wykonać dowolną bazę danych MySQL zgodnie z poniższą specyfikacją.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Projekt nr 2: Implementacja bazy danych MySQL
 
-### Prerequisites
+. Zaprojektuj i zaimplementuj wybraną bazę danych tak aby składała się z minimum 5 tabel.
+. Wprowadź przykładowe dane do powyższych tabel.
+. Zastosuj wszystkie klauzule poznane w module: Bazy danych.
+. Utwórz minimum 3 widoki ułatwiające wyświetlanie ważnych informacji.
+. *Zastosuj trigger, który zautomatyzuje pewne operacje.
 
-What things you need to install the software and how to install them
+## Top 500 Rank
 
-```
-Give examples
-```
+### Opis rankingu
+W ramach projektu została wykonana baza zawierająca całą historię rankingu superkomputerów zamieszczanego na stronie https://www.top500.org/[TOP500.org] +
 
-### Installing
+Kryterium decydującym o pozycji w rankingu jest parametr Rmax (mierzony obecnie w jednostkach TFlop/s, czyli operacjach zmiennoprzecinkowych na sekundę). 
+Podaje on maksymalną wydajność dla pakietu obliczeniowego LINPACK, czyli biblioteki oprogramowania do rozwiązywania układów równań liniowych z wykorzystaniem operacji na wektorach i macierzach.
+Ranking pojawia się dwa razy w roku, odpowiednio w miesiącach: czerwiec i listopad. Zawiera listę 500 najszybszych w danej chwili maszyn zainstalowanych 
+w różnych ośrodkach naukowych, badawczych i przemysłowych na całym świecie. Publikowany jest nieprzerwanie od 1993 roku, a zatem w listopadzie 2017 roku pojawił się już po raz 50-ty.
 
-A step by step series of examples that tell you have to get a development env running
+### Ranking w plikach
 
-Say what the step will be
+Za każdym razem jest to oddzielny plik XLS (Excel). Dane są zgrupowane w postaci jednej dużej tabeli
+zawierającej od 23 do 38 kolumn. Przed przystąpieniem do tworzenia bazy MySQL należało więc stworzyć
+ujednoliconą tabelę zbiorczą tj. dla 50 rankingów po 500 rekordów każdy. W sumie 25 000 rekordów.
+Zadanie okazało się niewdzięczne i pracochłonne, ze względu na dużą zmienność w liczbie kolum, ich nazewnictwie
+i kolejności umiejscowienia w poszczególnych arkuszach.
+Ostateczna tabela wynikowa składa się zatem z 29 kolumn i 25 000 rekordów. Rzecz jasna cechuje ją znaczna
+redundancja informacji. 
 
-```
-Give the example
-```
+### Normalizacja tabeli zbiorczej
 
-And repeat
+W kolejnym etapie tabela podlega normalizacji, czyli podziałowi na mniejsze tabele
+zgodnie z tzw. postaciami normalnymi tj. z uwzględnieniem zależności od kluczy potencjalnych i atrybutów niekluczowych.
+Powstaje 13 tabel wynikowych powiązanych odpowiednimi identyfikatorami autoinkrementacji (klucze główne).
+Zachowanie spójności powiązań pomiędzy identyfikatorami wymagało przeprowadzenia kilkuetapowego procesu
+w ramach którego należało wykonać kilkanaście zapytań wprowadzających (insert into) dane do tabel cząstkowych
+przy pomocy grupowania (group by), a następnie dodawania (alter) i aktualizacji (update) odpowiadających sobie
+kolumn identyfikatorów. Tego żmudnego procesu podzielonego na kilka skryptów SQL nie załączono do plików projektowych.
 
-```
-until finished
-```
+### Skrypty tworzące bazę danych
 
-End with an example of getting some data out of the system or using it for a little demo
+W projekcie (w katalogu sql) znajdują się natomiast trzy następujące skrypty SQL:
 
-## Running the tests
+link:{sqldir}/TOP500RANK-CREATE.sql[TOP500RANK-CREATE [8.73 KB]]::
 
-Explain how to run the automated tests for this system
+Uruchomienie pierwszego skryptu (w aplikacji Workbench) skutkuje stworzeniem bazy danych "top500rank" i jej struktury 13-tu tabel i 4-ech widoków.
+W dodatkowej czternastej tabeli umieszczono dane logowania do wykorzystania przez ewentualną przyszłą aplikację dostępową do bazy danych.
 
-### Break down into end to end tests
+link:{sqldir}/TOP500RANK-DATA.sql[TOP500RANK-DATA [2.19 MB]]::
 
-Explain what these tests test and why
+Wykonanie drugiego skryptu powoduje wypełnienie stworzonych właśnie tabel odpowiednimi danymi.
 
-```
-Give an example
-```
+link:{sqldir}/TOP500RANK-QUERIES.sql[TOP500RANK-QUERIES [1.63 KB]]::
 
-### And coding style tests
+Trzeci skrypt zawiera przykładowe zapytania testowe, listujące zawartości poszczególnych tabel i widoków
+oraz podające liczbę zwracanych przez nie rekordów wynikowych.
 
-Explain what these tests test and why
+### Diagram ER
 
-```
-Give an example
-```
+W pliku link:{sqldir}/ERD-TOP500RANK.png[ERD-TOP500RANK [95.7 KB]] umieszczono diagram bazy danych, prezentujący powiązania pomiędzy tabelami oraz stworzone widoki.
 
-## Deployment
+image::sql/ERD-TOP500RANK.png[Diagram ER]
 
-Add additional notes about how to deploy this on a live system
+## Materiały
 
-## Built With
+* "Bazy Danych MySQL", czyli ok. 250 slajdów z kursu PWN Back-End Developer.
+* MySQL 5.7 Reference Manual (https://dev.mysql.com/doc/refman/5.7/en/)
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+## Narzędzia
 
-## Contributing
+* MySQL Community Server 5.7.20 (https://dev.mysql.com/downloads/mysql/) - darmowy serwer relacyjnej bazy danych
+* MySQL Workbench 6.3.9 (https://downloads.mysql.com/archives/workbench/) - narzędzie wizualne do tworzenia relacyjnych baz danych z użyciem języka SQL
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+## Informacje dodatkowe
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
-
+Projekt został zrealizowany na dzień **23 listopada 2017r.**
