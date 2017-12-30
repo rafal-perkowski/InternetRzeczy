@@ -1,4 +1,4 @@
-## Wstęp
+# Wstęp
 
 W ramach przygotowań do kursu Back-End Developer PWN należało wykonać prostą stronę WWW z wykorzystaniem języków HTML i CSS.
 
