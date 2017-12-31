@@ -1,3 +1,5 @@
+= README KURSY PWN
+
 :githubdir: https://github.com/rperkow
 :projectdir: /KursyPWN
 :blobmasterdir: /blob/master
@@ -43,7 +45,7 @@ link:README-APP.adoc[README-APP] - opis aplikacji napisanej w języku Java.
 
 Na jej potrzeby została zaimplementowana także baza danych MySQL (*_kursypwn_*).
 
-link:README-DB.adoc[README-DB] - opis bazy danych zaimplementowanej z użyciem języka SQL.
+link:README-DB.adoc[README-DB] - opis bazy danych zaimplementowanej przy użyciu języka SQL.
 
 
 ## Materiały
@@ -72,9 +74,9 @@ NOTE: Dodatkowo należy skonfigurować własne hasło dostępu do serwera bazy d
 Oczywiście zależnie od potrzeb można skonfigurować także pozostałe parametry logowania podane w kolejnych liniach pliku konfiguracyjnego:
 
 ====
-* url - adres URL komputera z serwerem i bazą danych (_domyślna wartość: [jdbc:mysql://localhost:3306/kursypwn]_)
-* login - nazwa użytkownika na serwerze bazy danych (_domyślna wartość: [root]_)
-* password - hasło użytkownika na serwerze bazy danych (*_brakująca wartość_*)
+* url - adres komputera z serwerem i bazą danych (_domyślna wartość: **jdbc:mysql://localhost:3306/kursypwn**_)
+* login - nazwa użytkownika na serwerze bazy danych (_domyślna wartość: **root**_)
+* password - hasło użytkownika na serwerze bazy danych (_wymagana konfiguracja_)
 ====
 
 Po skonfigurowaniu i nawiązaniu połączenia z bazą danych pojawi się okno logowania do aplikacji.
