@@ -1,6 +1,9 @@
+= README INTERNET RZECZY
+
 :githubdir: https://github.com/rperkow
 :projectdir: /InternetRzeczy
 :blobmasterdir: /blob/master
+:srcdir: src
 
 ## Wstęp
 
@@ -18,15 +21,15 @@ W ramach przygotowań do kursu Back-End Developer PWN należało wykonać prost�
 Projekt został poświęcony popularnej obecnie tematyce Internetu Rzeczy (_ang. IoT = Internet of Things_). +
 Składa się z 5 stron HTML (jednej głównej i czterech tematycznych). W oddzielnych katalogach umieszczono zdjęcia i arkusz stylów.
 
-* link:index.html[Internet Rzeczy] - Strona główna
-* {githubdir}{projectdir}{blobmasterdir}/architektura.html[Architektura] - Opis architektury
-* {githubdir}{projectdir}{blobmasterdir}/urzadzenia.html[Urządzenia] - Charakterystyka urządzeń
-* {githubdir}{projectdir}{blobmasterdir}/chmura.html[Chmura] - Chmura obliczeniowa
-* {githubdir}{projectdir}{blobmasterdir}/zastosowania.html[Zastosowania] - Obszary zastosowań
+* link:{srcdir}/index.html[Internet Rzeczy] - Strona główna
+* link:{srcdir}/architektura.html[Architektura] - Opis architektury
+* link:{srcdir}/urzadzenia.html[Urządzenia] - Charakterystyka urządzeń
+* link:{srcdir}/chmura.html[Chmura] - Chmura obliczeniowa
+* link:{srcdir}/zastosowania.html[Zastosowania] - Obszary zastosowań
 
 ## Materiały
 
-* Wprowadzenie do HTML i CSS, czyli ok. 100 slajdów z kursu PWN prezentujących podstawy technik front-endowych.
+* "Wprowadzenie do HTML i CSS" - ~100 slajdów z kursu PWN prezentujących podstawy technik front-endowych.
 * https://www.w3schools.com/html/default.asp[W3Schools HTML]
 * https://www.w3schools.com/css/default.asp[W3Schools CSS]
 
