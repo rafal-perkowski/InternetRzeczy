@@ -67,7 +67,7 @@ link:README-DB.adoc[README-DB] - opis bazy danych zaimplementowanej z użyciem j
 
 Program działa razem z bazą danych *_kursypwn_* sprządzoną w ramach projektu *_KursyPWN_*.
 
-NOTE: Dodatkowo należy skonfigurować własne hasło dostępu do serwera bazy danych w pliku link:{srcdir}/logowanie.txt[logowanie.txt] dla konta "root" (w miejsce trzech gwiazdek) .
+NOTE: Dodatkowo należy skonfigurować własne hasło dostępu do serwera bazy danych w pliku link:{srcdir}/logowanie.txt[logowanie.txt] dla konta *_root_* (w miejsce trzech gwiazdek) .
 
 Oczywiście zależnie od potrzeb można skonfigurować także pozostałe parametry logowania podane w kolejnych liniach pliku konfiguracyjnego:
 
