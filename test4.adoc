@@ -77,7 +77,7 @@ Oczywiście zależnie od potrzeb można skonfigurować także pozostałe paramet
 * password - hasło użytkownika na serwerze bazy danych (*_brakująca wartość_*)
 ====
 
-Po skonfigurowaniu i nawiązaniu połączenia z bazą danych pojawi się logo aplikacji i konsola logowania do bazy danych.
+Po skonfigurowaniu i nawiązaniu połączenia z bazą danych pojawi się okno logowania do aplikacji.
 
 ### Logowanie
 
