@@ -16,20 +16,9 @@ Aplikacja składa się z:
 * widoków FXML konfigurujących graficzny interfejs użytkownika (_13 plików_)
 * klas kontrolerów odpowiedzialnych za interakcję z użytkownikiem i bazą danych (_13 klas_), wyświetlanie okien interfejsu (_1 klasa_) i testowanie (_2 klasy_)
 
-konfigurujących interfejs graficzny użytkownika (Trenera i Kursanta)
-oraz wspólny (np. logowanie i kontakty).
-Następną grupę stanowią pliki wchodzące w skład tzw. modelu (7 klas odpowiadających tabelom w bazie danych, 6 klas odpowiadających
-widokom w bazie danych, 1 klasa realizuje generowanie zapytań do bazy danych na podstawie wzorców TCV).
-Komunikację między widokami i modelem zapewniają klasy kontrolerów (13 sztuk). Dodatkowe 3 klasy stanowią kontrolery stworzone na
-potrzeby testów (DBController - wydruk całej bazy danych, TestController - śledzenie kolejnych kroków wykonania aplikacji po ustawieniu
-flagi "tracelFlagBool" na "true") oraz grupowania funkcji wyświetlania obiektów interfejsu okienkowego (ViewController).
-Zestawienie i zakończenie połączenia z bazą danych odbywa się za pomocą klasy DBConnector.
-
 ### [M] Model bazy danych
 
-
-
-[%header,cols="3,9"]
+[%header,cols="4,8"]
 |===
 ^|Klasa Javy
 ^|Nazwy pól (liczba)
@@ -79,39 +68,103 @@ Zestawienie i zakończenie połączenia z bazą danych odbywa się za pomocą kl
 
 ### [V] Widoki FXML
 
-link:{srcdir}/view/AdminView.fxml[AdminView] +
-link:{srcdir}/view/DaneAdminView.fxml[DaneAdminView] +
-link:{srcdir}/view/DaneUserView.fxml[DaneUserView] +
-link:{srcdir}/view/GrupyView.fxml[GrupyView] +
-link:{srcdir}/view/KontaktyKorespondencjaView.fxml[KontaktyKorespondencjaView] +
-link:{srcdir}/view/KontaktyUzytkownicyView.fxml[KontaktyUzytkownicyView] +
-link:{srcdir}/view/KursanciView.fxml[KursanciView] +
-link:{srcdir}/view/LoginView.fxml[LoginView] +
-link:{srcdir}/view/OcenyView.fxml[OcenyView] +
-link:{srcdir}/view/ProjektyAdminView.fxml[ProjektyAdminView] +
-link:{srcdir}/view/ProjektyUserView.fxml[ProjektyUserView] +
-link:{srcdir}/view/StatystykiView.fxml[StatystykiView] +
-link:{srcdir}/view/UserView.fxml[UserView] +
+[%header,cols="4,8"]
+|===
+^|Widok FXML
+^|Elementy JavaFX (liczba)
 
+|link:{srcdir}/view/AdminView.fxml[AdminView]
+|_AnchorPane_ (2), _Button_ (7), _Separator_ (2)
+
+|link:{srcdir}/view/DaneAdminView.fxml[DaneAdminView]
+|_AnchorPane_ (1), _Label_ (10), _TextField_ (9), _ImageView_ (1)
+
+|link:{srcdir}/view/DaneUserView.fxml[DaneUserView]
+|_AnchorPane_ (1), _Label_ (11), _TextField_ (10), _ImageView_ (1)
+
+|link:{srcdir}/view/GrupyView.fxml[GrupyView]
+|_AnchorPane_ (1), _Label_ (4), _TableView_ (1), _Button_ (3), _Separator_ (1), _TextField_ (1), _TextArea_ (1)
+
+|link:{srcdir}/view/KontaktyKorespondencjaView.fxml[KontaktyKorespondencjaView]
+|_AnchorPane_ (1), _Label_ (1), _TableView_ (1), _TextArea_ (1), _Button_ (2)
+
+|link:{srcdir}/view/KontaktyUzytkownicyView.fxml[KontaktyUzytkownicyView]
+|_AnchorPane_ (1), _Label_ (3), _TableView_ (1), _TextField_ (1), _TextArea_ (1), _Button_ (2)
+
+|link:{srcdir}/view/KursanciView.fxml[KursanciView]
+|_AnchorPane_ (1), _Label_ (10), _TableView_ (1), _Button_ (3), _Separator_ (1), _TextField_ (7), _ComboBox_ (1)
+
+|link:{srcdir}/view/LoginView.fxml[LoginView]
+|_AnchorPane_ (1), _ImageView_ (1), _Label_ (2), _TextField_ (1), _PasswordField_ (1), _Button_ (2)
+
+|link:{srcdir}/view/OcenyView.fxml[OcenyView]
+|_AnchorPane_ (1), _Label_ (3), _TableView_ (1), _Button_ (2), _TextArea_ (1), _ComboBox_ (1)
+
+|link:{srcdir}/view/ProjektyAdminView.fxml[ProjektyAdminView]
+|_AnchorPane_ (1), _Label_ (6), _TableView_ (1), _Button_ (3), _Separator_ (1), _TextField_ (2), _TextArea_ (1), _DatePicker_ (1)
+
+|link:{srcdir}/view/ProjektyUserView.fxml[ProjektyUserView]
+|_AnchorPane_ (1), _Label_ (1), _TableView_ (1), _Button_ (1)
+
+|link:{srcdir}/view/StatystykiView.fxml[StatystykiView]
+|_AnchorPane_ (1), _Label_ (5), _TextField_ (2), _TableView_ (2), _Button_ (1)
+
+|link:{srcdir}/view/UserView.fxml[UserView]
+|_AnchorPane_ (2), _Separator_ (2), _Button_ (3)
+|===
 
 ### [C] Klasy kontrolerów
 
-link:{srcdir}/controller/AdminController.java[AdminController] +
-link:{srcdir}/controller/DaneAdminController.java[DaneAdminController] +
-link:{srcdir}/controller/DaneUserController.java[DaneUserController] +
-link:{srcdir}/controller/DBController.java[DBController] +
-link:{srcdir}/controller/GrupyController.java[GrupyController] +
-link:{srcdir}/controller/KontaktyKorespondencjaController.java[KontaktyKorespondencjaController] +
-link:{srcdir}/controller/KontaktyUzytkownicyController.java[KontaktyUzytkownicyController] +
-link:{srcdir}/controller/KursanciController.java[KursanciController] +
-link:{srcdir}/controller/LoginController.java[LoginController] +
-link:{srcdir}/controller/OcenyViewController.java[OcenyViewController] +
-link:{srcdir}/controller/ProjektyAdminController.java[ProjektyAdminController] +
-link:{srcdir}/controller/ProjektyUserController.java[ProjektyUserController] +
-link:{srcdir}/controller/StatystykiController.java[StatystykiController] +
-link:{srcdir}/controller/TestController.java[TestController] +
-link:{srcdir}/controller/UserController.java[UserController] +
-link:{srcdir}/controller/ViewController.java[ViewController] +
+[%header,cols="4,8"]
+|===
+^|Klasa Javy
+^|Opis funkcji
 
+|link:{srcdir}/controller/AdminController.java[AdminController]
+|_implementuje obsługę panelu administratora/trenera_
 
+|link:{srcdir}/controller/DaneAdminController.java[DaneAdminController]
+|_wyświetla dane personalne administratora/trenera_
 
+|link:{srcdir}/controller/DaneUserController.java[DaneUserController]
+|_wyświetla dane personalne użytkownika/kursanta_
+
+|link:{srcdir}/controller/DBController.java[DBController]
+|_umożliwia testowy wydruk całej bazy danych do okna konsoli_
+
+|link:{srcdir}/controller/GrupyController.java[GrupyController]
+|_umożliwia dodawanie i usuwanie grup_
+
+|link:{srcdir}/controller/KontaktyKorespondencjaController.java[KontaktyKorespondencjaController]
+|_wyświetla korespondencję danego użytkownika_
+
+|link:{srcdir}/controller/KontaktyUzytkownicyController.java[KontaktyUzytkownicyController]
+|_umożliwia wysłanie wiadomości do innego użytkownika znajdującego się na liście kontaktów_
+
+|link:{srcdir}/controller/KursanciController.java[KursanciController]
+|_umożliwia dodawanie i usuwanie kursantów_
+
+|link:{srcdir}/controller/LoginController.java[LoginController]
+|_obsługuje okno logowania do bazy danych_
+
+|link:{srcdir}/controller/OcenyViewController.java[OcenyViewController]
+|_umożliwia ocenianie projektów w bazie danych_
+
+|link:{srcdir}/controller/ProjektyAdminController.java[ProjektyAdminController]
+|_umożliwia dodawanie i usuwanie projektów_
+
+|link:{srcdir}/controller/ProjektyUserController.java[ProjektyUserController]
+|_umożliwia wyświetlenie własnych projektów_
+
+|link:{srcdir}/controller/StatystykiController.java[StatystykiController]
+|_wyświetla statystyki projektów dla całej organizacji, poszczególnych grup i kursantów_
+
+|link:{srcdir}/controller/TestController.java[TestController]
+|_śledzenie kolejnych kroków wykonania aplikacji po ustawieniu flagi [tracelFlagBool] na [true]_
+
+|link:{srcdir}/controller/UserController.java[UserController]
+|_implementuje osługuję panelu użytkownika/kursanta_
+
+|link:{srcdir}/controller/ViewController.java[ViewController]
+|_grupuje funkcje wyświetlania obiektów interfejsu okienkowego_
+|===
