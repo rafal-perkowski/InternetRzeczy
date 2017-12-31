@@ -1,4 +1,4 @@
-= README INTERNET RZECZY
+= README - INTERNET RZECZY
 
 :githubdir: https://github.com/rperkow
 :projectdir: /InternetRzeczy
