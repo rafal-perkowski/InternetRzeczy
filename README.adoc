@@ -1,6 +1,6 @@
 = README - INTERNET RZECZY
 
-:githubdir: https://github.com/rperkow
+:githubdir: https://github.com/rafal-perkowski
 :projectdir: /InternetRzeczy
 :blobmasterdir: /blob/master
 :srcdir: src
