@@ -3,6 +3,7 @@
 :githubdir: https://github.com/rafal-perkowski
 :projectdir: /InternetRzeczy
 :blobmasterdir: /blob/master
+:imgdir: img
 :srcdir: src
 
 ## Wstęp
@@ -21,11 +22,15 @@ W ramach przygotowań do kursu Back-End Developer PWN należało wykonać prost�
 Projekt został poświęcony popularnej obecnie tematyce Internetu Rzeczy (_ang. IoT = Internet of Things_). +
 Składa się z 5 stron HTML (jednej głównej i czterech tematycznych). W oddzielnych katalogach umieszczono zdjęcia i arkusz stylów.
 
-* link:{srcdir}/index.html[Internet Rzeczy] - Strona główna
-* link:{srcdir}/architektura.html[Architektura] - Opis architektury
-* link:{srcdir}/urzadzenia.html[Urządzenia] - Charakterystyka urządzeń
-* link:{srcdir}/chmura.html[Chmura] - Chmura obliczeniowa
-* link:{srcdir}/zastosowania.html[Zastosowania] - Obszary zastosowań
+* link:{srcdir}/index.html[Internet Rzeczy] - Strona główna link:{imgdir}/01-InternetRzeczy.png[[_img_]]
+
+* link:{srcdir}/architektura.html[Architektura] - Opis architektury link:{imgdir}/02-Architektura.png[[_img_]]
+
+* link:{srcdir}/urzadzenia.html[Urządzenia] - Charakterystyka urządzeń link:{imgdir}/03-Urzadzenia.png[[_img_]]
+
+* link:{srcdir}/chmura.html[Chmura] - Chmura obliczeniowa link:{imgdir}/04-Chmura.png[[_img_]]
+
+* link:{srcdir}/zastosowania.html[Zastosowania] - Obszary zastosowań link:{imgdir}/05-Zastosowania.png[[_img_]]
 
 ## Materiały
 
